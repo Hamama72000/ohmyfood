@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+* body, html {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.contenu-restaurant a {
+  position: absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  top: 5%;
+  left: 3rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+img {
+  display :flex;
+  height: 17rem;
+}
+
+.titre-menu h2 {
+  margin-bottom: 10px;
+}
+
+.bloc-menu {
+  background: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  margin-top: -3rem;
+  padding-bottom: 60px;
+
+}
+
+.fa-heart:before {
+  display: flex;
+  position: absolute;
+  font-size: 23px;
+  margin-top: -20px;
+  margin-left: 40px;
+}
+
+.titre-menu {
+  font-family: "Shrikhand", sans-serif;
+  padding: 1rem 1.5rem;
+  font-size: 18px;
+  margin-bottom: -30px;
+}
+
+.sous-titre h3 {
+  padding: 0 1.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 15px;
+}
+
+.sous-titre :after {
+    content: "";
+    width: 2.7rem;
+    height: 0.2rem;
+    background-color: #99e2d0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 24px;
+}
+
+.sous-titre h3 {
+  font-weight: 200;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 30px;
+}
+
+.menus {
+  padding: 0 1rem;
+}
+
+.differents-menus {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.differents-menus h4 {
+  margin: 0;
+}
+
+.differents-menus p {
+  margin: 6px 0 0 0;
+}
+
+.menu-prix {
+  position: absolute;
+  margin-left: 290px;
+  margin-top: 24px;
+  font-weight: bold;
+}
+
+.position__label {
+  display: flex;
+  background-color: #686868;
+  background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+  color: #ffffff;
+  font-weight: bolder;
+  border-radius: 100px;
+  justify-content: center;
+  padding: 16.5px;
+  margin: 50px 100px 0 100px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  width: 100%;
+  padding: 10px 0 0 30px;
+}
+
+.logo-footer {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content:left;
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.footer__proposer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.footer h4 {
+  color: white;
+}
+
+/* marges à droite pour le texte */
+.footer__proposer i {
+  margin-right: 3px;
+}
+
+/* marge pour l'icone ustensile */
+.fa-cutlery:before, .fa-utensils:before {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
