@@ -95,7 +95,7 @@ img {
   background-color: #fff;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0.75rem;
   margin: 1rem 0;
   box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
@@ -103,19 +103,31 @@ img {
   cursor: pointer;
 }
 
+.titre-paragraphe {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
 .differents-menus h4 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .differents-menus p {
   margin: 6px 0 0 0;
+  overflow: hidden;
+  white-space: nowrap ;
+  text-overflow: ellipsis;
 }
 
 .menu-prix {
-  position: absolute;
-  margin-left: 290px;
-  margin-top: 24px;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
 }
 
 .position__label {
