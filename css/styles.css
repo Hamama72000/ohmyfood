@@ -149,7 +149,7 @@ li {
     border: solid 2px #f6f6f6;
     border-radius: 1rem 1rem 0 0;
     height: 12rem;
-    width: 21.5rem;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -171,7 +171,7 @@ li {
   /* div coeurs */
   .loader {
     display: flex;
-    margin-left: 290px;
+    right: 35px;
     margin-top: 25px;
     font-size: 25px;
     cursor: pointer;
@@ -180,7 +180,7 @@ li {
   }
 
   .one {
-    margin-left: 290px;
+    right: 35px;
     margin-top: 25px;
     font-size: 25px; 
     position: absolute;
@@ -188,8 +188,8 @@ li {
     }
 
   .two:hover {
+    right: 20px;
     font-size: 25px;
-    position: absolute;
     background: linear-gradient(#9356DC, #FF79DA);
     color: #fff;
     font-weight: 600;
@@ -250,5 +250,3 @@ li {
   }
 
  
-
-
