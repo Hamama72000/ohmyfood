@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+* body,
+html {
+  margin: 0;
+  font-family: "roboto", sans-serif;
+}
+
+/* loading spinner */
+body {
+  height: 100vh;
+}
+
+#hideMeAfter5Seconds {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1000;
+}
+
+#hideMeAfter5Seconds {
+  animation: hideAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+#showMeAfter5Seconds {
+  animation: showAnimation 0s ease-in 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showAnimation {
+  to {
+    visibility: visible;
+  }
+}
+
+.chargement {
+  width: 20em;
+  height: 20em;
+  font-size: 10px;
+  background-color: black;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  animation: animate 3s linear infinite;
+}
+
+.chargement .face {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: animate 3s linear infinite;
+}
+
+.chargement .face:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  color: #ff79da;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal;
+}
+
+.chargement .face:nth-child(2) {
+  width: 70%;
+  height: 70%;
+  color: #9356dc;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse;
+}
+
+.chargement .face .circle {
+  position: absolute;
+  width: 50%;
+  height: 0.2em;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: rotate(var(--deg));
+  transform-origin: left;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  padding: 1.25rem 1rem;
+  font-size: 1rem;
+}
+
+.position__input {
+  border: none;
+  background-color: #f3f3f3;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: -80px;
+  margin-left: 10px;
+}
+
+.position__label {
+  display: flex;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  color: #ffffff;
+  font-weight: bolder;
+  border-radius: 100px;
+  justify-content: center;
+  padding: 16.5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.reservation {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.reservation__title {
+  margin-top: 0;
+  padding: 0 2rem 0 2rem;
+}
+
+.reservation p {
+  font-size: 16px;
+}
+
+.fonctionnement {
+  padding: 2rem 1rem;
+}
+
+.fonctionnement__title {
+  margin-top: 0;
+}
+
+.fonctionnement__ol {
+  list-style-type: none;
+  counter-reset: ordered;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.fonctionnement__image {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: grey;
+}
+
+.fa-store:before {
+  color: #9356dc;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+li {
+  padding: 1.5rem;
+  margin-bottom: 20px;
+  margin-left: -50px;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  border-radius: 1.25rem;
+}
+
+li::before {
+  border: 2px solid#9356DC;
+  background-color: #9356dc;
+  border-radius: 50%;
+  color: white;
+  content: counter(ordered);
+  counter-increment: ordered;
+  display: inline-block;
+  font-weight: 100;
+  margin-left: -30px;
+  margin-top: -3px;
+  padding: 1px 5px;
+  position: absolute;
+}
+
+.restaurants {
+  padding: 2rem 1rem;
+  background-color: #f6f6f6;
+}
+
+.restaurants_cartes {
+  background-color: white;
+  border-radius: 1rem 1rem;
+  margin-top: 1rem;
+}
+
+.restaurants_cartes p {
+  padding-left: 13px;
+  margin-top: 5px;
+}
+
+.restaurants_cartes h3 {
+  padding-left: 13px;
+  margin-bottom: 0;
+}
+
+.restaurants__bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurants_cartes img {
+  display: flex;
+  border: solid 2px #f6f6f6;
+  border-radius: 1rem 1rem 0 0;
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurants__h3 i {
+  margin-left: 90px;
+}
+
+.carte__badge {
+  background-color: #99e2d0;
+  color: #1b6150;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  margin-top: -175px;
+  right: 2rem;
+}
+
+/* div coeurs */
+.loader {
+  display: flex;
+  right: 35px;
+  margin-top: 25px;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.one {
+  right: 35px;
+  margin-top: 25px;
+  font-size: 25px;
+  position: absolute;
+  color: transparent;
+}
+
+.two:hover {
+  right: 20px;
+  font-size: 25px;
+  background: linear-gradient(#9356dc, #ff79da);
+  color: #fff;
+  font-weight: 600;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s ease-in-out both;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 180px;
+  }
+  100% {
+    background-position: left 0px top 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: #353535;
+  width: 100%;
+  padding: 10px 0 0 30px;
+}
+
+.logo__footer {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: left;
+  font-size: 18px;
+  color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.footer h4 {
+  color: white;
+}
+
+/* marges à droite pour le texte */
+.footer__proposer i {
+  margin-right: 3px;
+}
+
+/* marge pour l'icone ustensile */
+.fa-cutlery:before,
+.fa-utensils:before {
+  margin-right: 5px;
+}
+
+.footer__proposer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .position__label {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
