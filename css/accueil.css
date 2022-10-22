@@ -56,14 +56,14 @@ body {
   display: grid;
   place-items: center;
   z-index: 1;
-  animation: animate 3s linear infinite;
+  animation: animate 3s linear;
 }
 
 .chargement .face {
   position: absolute;
   border-radius: 50%;
   border-style: solid;
-  animation: animate 3s linear infinite;
+  animation: animate 3s linear;
 }
 
 .chargement .face:nth-child(1) {
@@ -305,7 +305,7 @@ a {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: left;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: whitesmoke;
   margin-bottom: 0px;
 }
@@ -329,13 +329,4 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-}
-
-
-
-@media screen and (min-width: 992px) {
-  .position__label {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
 }

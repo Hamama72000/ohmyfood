@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-* body, html {
+* body,
+html {
   margin: 0;
   font-family: "roboto", sans-serif;
 }
@@ -18,10 +19,10 @@
 
 .contenu-restaurant a {
   position: absolute;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  top: 4%;
+  top: 4.2%;
   left: 3rem;
   text-decoration: none;
   color: black;
@@ -30,7 +31,7 @@
 }
 
 img {
-  display :flex;
+  display: flex;
   width: 100%;
 }
 
@@ -45,9 +46,7 @@ img {
   position: relative;
   margin-top: -3rem;
   padding-bottom: 60px;
-
 }
-
 
 /* div coeurs */
 .loader {
@@ -62,31 +61,30 @@ img {
 .one {
   margin-top: -32px;
   right: 35px;
-  font-size: 25px; 
+  font-size: 25px;
   position: absolute;
   color: transparent;
-  }
+}
 
 .two:hover {
   font-size: 25px;
   right: 20px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#9356dc, #ff79da);
   color: #fff;
   font-weight: 600;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate 10s ease-in-out both;
-  }
-  
-  @keyframes animate {
-    0% {
-      background-position: left 0px top 180px;
-    }
-    100% {
-      background-position: left 0px top 10px;
-    }
-  }
+}
 
+@keyframes animate {
+  0% {
+    background-position: left 0px top 180px;
+  }
+  100% {
+    background-position: left 0px top 10px;
+  }
+}
 
 .titre-menu {
   font-family: "Shrikhand", sans-serif;
@@ -102,14 +100,14 @@ img {
 }
 
 .sous-titre :after {
-    content: "";
-    width: 2.7rem;
-    height: 0.2rem;
-    background-color: #99e2d0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-left: 24px;
+  content: "";
+  width: 2.7rem;
+  height: 0.2rem;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 24px;
 }
 
 .sous-titre h3 {
@@ -133,7 +131,7 @@ img {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
-  animation: appear .9s;
+  animation: appear 0.9s;
   animation-fill-mode: both;
 }
 
@@ -154,55 +152,50 @@ img {
 .differents-menus p {
   margin: 6px 0 0 0;
   overflow: hidden;
-  white-space: nowrap ;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
-  
-.menus {
 
+.menus {
   animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
 }
 
 .delay-0 {
-animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .delay-1 {
-  animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 
 .delay-2 {
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .delay-3 {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .delay-4 {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .delay-5 {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .delay-6 {
-  animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 
 .delay-7 {
-  animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 
 .delay-8 {
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
-
-
-
-
 
 @keyframes appear {
   0% {
@@ -218,7 +211,7 @@ animation-delay: 0s;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
-  margin-left: 4px;  /* marge pour avoir les 3 points de suspensions partout  */
+  margin-left: 4px; /* marge pour avoir les 3 points de suspensions partout  */
 }
 
 .menuItem__icon {
@@ -232,7 +225,7 @@ animation-delay: 0s;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
 
 .menuItem__wrapIcon {
@@ -244,23 +237,21 @@ animation-delay: 0s;
   justify-content: center;
   border-radius: 100px;
   transform: rotate(180deg);
-  transition-duration: .5s;
+  transition-duration: 0.5s;
 }
-
 
 .menuItem__wrapIcon {
   transform: rotate(0);
 }
 
-.differents-menus:hover .menuItem__confirmation{
+.differents-menus:hover .menuItem__confirmation {
   margin-right: -1rem;
 }
-
 
 .position__label {
   display: flex;
   background-color: #686868;
-  background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   color: #ffffff;
   font-weight: bolder;
   border-radius: 100px;
@@ -281,10 +272,9 @@ animation-delay: 0s;
 .logo-footer {
   font-family: "Shrikhand", cursive;
   display: flex;
-  justify-content:left;
-  font-size: 18px;
+  justify-content: left;
+  font-size: 1.2rem;
   color: whitesmoke;
-  margin-bottom: 0px;
 }
 
 .footer__proposer a {
@@ -295,6 +285,7 @@ animation-delay: 0s;
 
 .footer h4 {
   color: white;
+  margin-top: 0;
 }
 
 /* marges à droite pour le texte */
@@ -303,14 +294,7 @@ animation-delay: 0s;
 }
 
 /* marge pour l'icone ustensile */
-.fa-cutlery:before, .fa-utensils:before {
+.fa-cutlery:before,
+.fa-utensils:before {
   margin-right: 7px;
 }
-
-
-
-
-
-
-
-
