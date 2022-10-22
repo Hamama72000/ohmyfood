@@ -24,7 +24,7 @@ body {
 }
 
 #hideMeAfter5Seconds {
-  animation: hideAnimation 0s ease-in 5s;
+  animation: hideAnimation 0s ease-in 2s;
   animation-fill-mode: forwards;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 #showMeAfter5Seconds {
-  animation: showAnimation 0s ease-in 5s;
+  animation: showAnimation 0s ease-in 2s;
   animation-fill-mode: forwards;
 }
 
