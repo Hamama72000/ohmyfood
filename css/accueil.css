@@ -135,6 +135,10 @@ body {
   box-shadow: 5px 5px 5px lightgrey;
 }
 
+.position__label:hover {
+  filter: brightness(1.1);
+  box-shadow:  rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
 
 .reservation {
   padding: 2rem;
@@ -208,6 +212,10 @@ li::before {
   position: absolute;
 }
 
+li:hover {
+  filter: brightness(1.1);
+  box-shadow:  rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
 
 .restaurants {
   padding: 2rem 1rem;
@@ -342,25 +350,23 @@ a {
 }
 
 @media  screen and (min-width: 768px) {
-  .fonctionnement, .restaurants {
-    text-align: center;
+.fonctionnement, .restaurants {
+  text-align: center;
   }
-
-
 }
+
 @media  screen and (min-width: 992px) {
 
-
-  .fonctionnement { 
-    max-width: 1440px;
+.fonctionnement { 
+  max-width: 1440px;
   }
 
-  .fonctionnement__ol {
+.fonctionnement__ol {
     display:flex;
     justify-content: space-between;
   }
 
-  li {
+li {
     font-size: 20px;
   }
 }
