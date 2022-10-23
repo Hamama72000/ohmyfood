@@ -330,3 +330,33 @@ a {
   color: white;
   cursor: pointer;
 }
+
+@media  screen and (min-width: 768px) {
+  .fonctionnement, .restaurants {
+    text-align: center;
+  }
+
+  .position__label {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+@media  screen and (min-width: 992px) {
+   .position__label {
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+
+  .fonctionnement { 
+    max-width: 1440px;
+  }
+
+  .fonctionnement__ol {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  li {
+    font-size: 20px;
+  }
+}
