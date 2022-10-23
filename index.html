@@ -16,7 +16,7 @@
   
   <body> 
   
-    <iframe id="hideMeAfter5Seconds" frameBorder="0" src="loader.html"></iframe>
+    <iframe id="hideMeAfter5Seconds" style="border: 0" src="loader.html"></iframe>
 
     <div id="showMeAfter5Seconds" style="visibility: hidden;">
       <header class="logo">  
@@ -25,7 +25,7 @@
   
       <main>
         <section class="position">
-          <div class="position__search" id="rechercher">
+          <div class="position__search">
             <form>
               <i class="fa-solid fa-location-dot"></i>
               <input class="position__input" type="text" name="rechercher" placeholder="Paris, Belleville" />
@@ -36,11 +36,11 @@
         <section class="reservation">
           <h2 class="reservation__title">Réservez le menu qui vous convient</h2>
           <p>Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-          <div class="box" id="rechercher">
+          <div class="box">
             <form>
               <div class="recherche">
                 
-                <label class="position__label" style="align-self: center" for="pseudo"> Explorez nos restaurants</label>
+                <label class="position__label" style="align-self: center"> Explorez nos restaurants</label>
                 
               </div>
             </form>
@@ -66,7 +66,7 @@
   
             <li>
               <span class="fonctionnement__image3">
-                <img class="restaurant" /> <i class="fa-store fas"></i>
+                <i class="fa-store fas"></i>
                 Dégustez au restaurant
               </span>
             </li>
@@ -85,7 +85,7 @@
               </div>
                   <span class="carte__badge">Nouveau</span>
                       <div class="restaurants__bloc">
-                                <h3>La palette du goût</h3>
+                           <h3>La palette du goût</h3>
                                    <div class="loader">
                                     <i class="fas fa-heart one "></i>  
                                     <i class="far fa-heart two "></i> 
@@ -142,7 +142,7 @@
           </div>
         </section>
       </main>
-      <footer>
+
           <footer class="footer">
               <h1 class="logo__footer">ohmyfood</h1>
   
@@ -152,6 +152,7 @@
                       Proposer un restaurant
                       </a>
                   </h4>
+              </section>
                                         
               <section class="footer__proposer">
                   <h4>
@@ -160,19 +161,23 @@
                       Devenir partenaire 
                       </a>
                   </h4>
+                </section>
               
   
               <section class="footer__proposer">
                   <h4>
                       <a href="#">Mentions légales</a>
                   </h4>
+                </section>
 
               <section class="footer__proposer">
                   <h4>
                       <a href="mailto:contact@ohmyfood.fr">Contact</a>
                   </h4>
+              </section>
+
           </footer>
-      </footer>
+ 
     </div>
 
  

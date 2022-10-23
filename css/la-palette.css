@@ -22,7 +22,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 4.2%;
+  top: 32px;
   left: 3rem;
   text-decoration: none;
   color: black;
@@ -203,7 +203,7 @@ img {
   }
 
   100% {
-    transform: translateY(1);
+    transform: translateY(1px);
   }
 }
 
@@ -216,6 +216,12 @@ img {
 
 .menuItem__icon {
   color: #99e2d0;
+  transform: rotate(-360deg);
+  transition-duration: 0.5s;
+}
+
+.differents-menus:hover .menuItem__icon {
+  transform: rotate(0deg);
 }
 
 .menuItem__confirmation {
@@ -242,6 +248,7 @@ img {
 
 .menuItem__wrapIcon {
   transform: rotate(0);
+  transition-duration: 0.5s;
 }
 
 .differents-menus:hover .menuItem__confirmation {
@@ -259,6 +266,7 @@ img {
   padding: 16.5px;
   margin: 50px 100px 0 100px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 .footer {

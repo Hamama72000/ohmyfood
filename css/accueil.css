@@ -132,7 +132,9 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px lightgrey;
 }
+
 
 .reservation {
   padding: 2rem;
@@ -176,6 +178,11 @@ body {
   margin-right: 15px;
 }
 
+.recherche {
+  display:flex;
+  justify-content: center;
+}
+
 li {
   padding: 1.5rem;
   margin-bottom: 20px;
@@ -199,6 +206,7 @@ li::before {
   padding: 1px 5px;
   position: absolute;
 }
+
 
 .restaurants {
   padding: 2rem 1rem;
@@ -336,16 +344,10 @@ a {
     text-align: center;
   }
 
-  .position__label {
-    margin-left: 250px;
-    margin-right: 250px;
-  }
+
 }
 @media  screen and (min-width: 992px) {
-   .position__label {
-    margin-left: 450px;
-    margin-right: 450px;
-  }
+
 
   .fonctionnement { 
     max-width: 1440px;
