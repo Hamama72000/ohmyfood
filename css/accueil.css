@@ -214,7 +214,8 @@ li::before {
 
 li:hover {
   filter: brightness(1.1);
-  box-shadow:  rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+  box-shadow:  rgb(50 50 93 / 25%) 0px 30px 60px -12px, rgb(0 0 0 / 30%) 0px 18px 36px -18px; 
+  background-color: #DDC6DF;
 }
 
 .restaurants {
